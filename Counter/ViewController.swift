@@ -9,17 +9,21 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak private var countLabel: UILabel!
         
-    var count: Int = 0
+    private var count: UInt = 0 {
+        didSet {
+            countLabel.text = "Значение счётчика: \(count)"
+        }
+    }
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         countLabel.text = "Значение счётчика: \(count)"
     }
     
-    @IBAction func addButtonDidTap(_ sender: Any) {
+    @IBAction private func addButtonDidTap(_ sender: Any) {
         count += 1
-        viewDidLoad()
     }
     
 }
