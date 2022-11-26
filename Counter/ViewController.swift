@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        countLabel.text = "Значение счётчика: \(count)"
+        count = 0
     }
     
     @IBAction private func addButtonDidTap(_ sender: Any) {
