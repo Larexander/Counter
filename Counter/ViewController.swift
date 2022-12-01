@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         count += 1
     }
     
-    @IBAction func clearButton(_ sender: Any) {
+    @IBAction func clearButtonDidTap(_ sender: Any) {
         count = 0
     }
     
