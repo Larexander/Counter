@@ -13,7 +13,7 @@ class ViewController: UIViewController {
         
     private var count: UInt = 0 {
         didSet {
-            countLabel.text = "Значение счётчика: \(count)"
+            countLabel.text = "Count: \(count)"
         }
     }
     
